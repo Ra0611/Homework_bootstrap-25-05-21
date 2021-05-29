@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Open+Sans:wght@300;600&display=swap");
+body {
+  background: #333333;
+  font: 14px/21px "Open Sans", sans-serif;
+}
+
+.font-sub {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.wrapper {
+  max-width: 1920px;
+}
+
+.container {
+  max-width: 1140px;
+}
+
+.title {
+  line-height: 65px;
+  letter-spacing: 50%;
+}
+
+.title__gold-text {
+  color: goldenrod;
+  letter-spacing: 50%;
+}
+
+.forms__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contacts {
+  font-weight: 700;
+  line-height: 21, 79px;
+}
+
+.forms__grid {
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+}
+
+.forms__grid-input {
+  padding-left: 10px;
+  background: #444444;
+  border: solid 1px #989898;
+  color: #989898;
+}
+
+/*# sourceMappingURL=style.css.map */
