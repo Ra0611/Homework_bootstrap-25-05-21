@@ -14,7 +14,7 @@
 <body class="text-white">
     <section class="wrapper d-flex align-items-center">
         <div class="container">
-            <form class="forms">
+            <form id="form" class="forms">
                 <div class="row mb-0 mb-sm-3 mb-md-5 w-100">
                     <div class="col-12 d-flex justify-content-center p-0 box-title ">
                         <h2 class="title text-uppercase font-sub"><span class="title__gold-text">стать</span> меценатом
@@ -37,12 +37,16 @@
                     <div class="col-12 col-lg-8">
                         <div class="row">
                             <div class="forms__grid col-12 col-sm-6 d-grid gap-3">
-                                <div class=""><input type="text" class="forms__grid-input p-1" placeholder="Имя"></div>
-                                <div class=""><input type="text" class="forms__grid-input p-1" placeholder="Компания">
+                                <div class=""><input name="name" type="text" class="forms__grid-input p-1"
+                                        placeholder="Имя"></div>
+                                <div class=""><input name="company" type="text" class="forms__grid-input p-1"
+                                        placeholder="Компания">
                                 </div>
-                                <div class=""><input type="text" class="forms__grid-input p-1" placeholder="Телефон">
+                                <div class=""><input name="phone" type="text" class="forms__grid-input p-1"
+                                        placeholder="Телефон">
                                 </div>
-                                <div class=""><input type="text" class="forms__grid-input p-1" placeholder="E-mail">
+                                <div class=""><input name="email" type="text" class="forms__grid-input p-1"
+                                        placeholder="E-mail">
                                 </div>
                                 <span class="forms__grid-text d-none d-sm-block">* Ваши данные не
                                     будут переданы третьим лицам, 100%
@@ -51,9 +55,10 @@
                                     законку ФЗ-52.</span>
                             </div>
                             <div class="col-12 col-sm-6 d-flex forms__flex">
-                                <textarea class="forms__flex-input w-100" id="exampleFormControlTextarea1" rows="4"
-                                    placeholder="Сообщение"></textarea>
-                                <button class="forms__flex-btn font-sub text-uppercase" type="submit">отправить</button>
+                                <textarea class="forms__flex-input w-100" data-text="massage"
+                                    id="exampleFormControlTextarea1" rows="4" placeholder="Сообщение"></textarea>
+                                <button id="btnSend" class="forms__flex-btn font-sub text-uppercase"
+                                    type="button">отправить</button>
                                 <span class="forms__grid-text d-sm-none">* Ваши данные не будут
                                     переданы третьим лицам, 100%
                                     вероятность. Конфиденциальность мы гарантируем, и защищаем персональные данные
@@ -66,6 +71,7 @@
 
             </form>
         </div>
+        <div class="modal-castom">Success!</div>
         <!-- https://www.figma.com/file/cucZT16e7NteUz6Ht3rkoI/Templates-%2315.-More-on-Figma.info-(Copy)?node-id=1%3A26 -->
     </section>
 
@@ -75,7 +81,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
         integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
         crossorigin="anonymous"></script>
-    <script src="../build/js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

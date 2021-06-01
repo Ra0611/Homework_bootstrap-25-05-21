@@ -123,5 +123,14 @@ body {
     text-align: center;
   }
 }
+.modal-castom {
+  position: fixed;
+  background-color: black;
+  padding: 24px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
 
 /*# sourceMappingURL=style.css.map */
